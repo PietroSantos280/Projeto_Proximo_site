@@ -11,17 +11,36 @@
     padding: 20px;
 
 }
+h1{
+    text-align: center;
+    font-family: Times;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+}
+p{
+    text-align: justify;
+    font-family: Times ;
+    margin: 20px;
+}
+footer{
+    p{
+        text-align: center;
+        font-family:Times;
+    }
+    
+}
 body{
     background-color: white;
 }
 header{
-      background-color: whitesmoke;
-      color: black;
-      padding: 15px 15px 15px 15px;
-      width: 100%;
-      top: 0;
-      position: fixed;
-      z-index: 1000;
+    background-color: whitesmoke;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
 }
 nav ul{
     list-style: none;
@@ -60,4 +79,22 @@ header .container{
         margin-top: 10px;
         flex-direction: column
     }
+}
+img{
+    display: block;
+    margin: 0;
+}
+.photo-scroll {
+    display: flex;
+    overflow-x: scroll;
+    width: 80%;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.photo-scroll img {
+    max-height: 300px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
