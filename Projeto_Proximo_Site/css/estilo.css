@@ -1,46 +1,36 @@
 *{
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
-.container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+footer{
+    text-align: center;
 
 }
 h1{
     text-align: center;
-    font-family: Times;
-    background-color: black;
-    color: whitesmoke;
-    margin: 0;
+    text-shadow: 5px 5px 5px white;
+    color: black;
+
 }
-p{
-    text-align: justify;
-    font-family: Times ;
-    margin: 20px;
-}
-footer{
-    p{
-        text-align: center;
-        font-family:Times;
-    }
-    
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 1px;
 }
 body{
     background-color: white;
 }
 header{
     background-color: whitesmoke;
-    color: black;
+    color: white;
     padding: 15px 15px 15px 15px;
     width: 100%;
     top: 0;
-    z-index: 1000;
     position: fixed;
+    z-index: 1000;
 }
 nav ul{
     list-style: none;
@@ -49,15 +39,14 @@ nav ul{
     justify-content: center;
 }
 nav ul li{
-    margin-left: 20px;
+    margin-left: 25px;
 }
-
-nav ul li a{
+nav ul li a {
     color: black;
     text-decoration: none;
 }
 a:hover{
-    background-color: gray;
+    background-color: white;
 }
 header .container{
     display: flex;
@@ -65,22 +54,41 @@ header .container{
     align-items: center;
     flex-wrap: wrap;
 }
- .logo{
+.logo{
     font-size: 2em;
     font-weight: bold;
-    width: 30%; 
 
 }
-@media(max-width:675px){
+.banner{
+    background:url(../img/porsches.jpeg) no-repeat center/cover;
+    height: 400px;
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.3em;
+    text-align: center;
+    text-shadow: 5px 5px 5px white;
+
+}
+
+
+@media (max-width:675px) {
     header .container{
         flex-direction: column;
-        text-align: centers;
+        text-align: center;
+
     }
-    nav ul{
+    nav ul {
         margin-top: 10px;
-        flex-direction: column
+        flex-direction: column;
+    }
+    .banner{
+        margin-top: 160px;
     }
 }
+
 img{
     display: block;
     margin: 0;
