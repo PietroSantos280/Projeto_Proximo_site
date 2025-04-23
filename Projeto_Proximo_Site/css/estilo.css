@@ -7,6 +7,7 @@
 }
 footer{
     text-align: center;
+    background-color: whitesmoke;
 
 }
 h1{
@@ -25,7 +26,7 @@ body{
 }
 header{
     background-color: whitesmoke;
-    color: white;
+    color: black;
     padding: 15px 15px 15px 15px;
     width: 100%;
     top: 0;
@@ -63,19 +64,136 @@ header .container{
     background:url(../img/porsches.jpeg) no-repeat center/cover;
     height: 400px;
     display: flex;
+    flex-direction: column;
     margin-top: 90px;
     align-items: center;
     justify-content: center;
+    padding-left: 30px;
     color: black;
     font-size: 1.3em;
     text-align: center;
     text-shadow: 5px 5px 5px white;
 
 }
+#historia{
+    padding: 35px;
+    background-color: whitesmoke;
+    color: black;
+}
+.sobre-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+.sobre-texto{
+    flex: 1;
+    padding: 20px;
+}
+.sobre-texto h1{
+    font-size: 1.5em;
+    margin-bottom: 20px;
 
+}
+.sobre-texto p{
+    font-size: 1;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+}
+.hex-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    flex: 1;
 
+}
+.hex{
+    width: 140px;
+    height: 120px;
+    clip-path: circle(60%);
+    overflow: hidden;
+    background-color: whitesmoke;
+    position: relative;
+}
+.hex img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#curiosidades{
+    padding: 35px;
+    background-color: whitesmoke;
+    color: black;
+}
+.sobre-curiosidades{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+.sobre-le-mans{
+    flex: 1;
+    padding: 20px;
+}
+.sobre-le-mans h1{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+
+}
+.sobre-le-mans p{
+    font-size: 1;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+}
+.hex-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    flex: 1;
+
+}
+.foto{
+    width: 140px;
+    height: 120px;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    overflow: hidden;
+    background-color: whitesmoke;
+    position: relative;
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#modelos{
+    padding: 35px;
+    background-color: white;
+    color: black;
+}
+.sobre-modelos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+#tecnologia{
+    padding: 35px;
+    background-color: white;
+    color: black;
+}
 @media (max-width:675px) {
-    header .container{
+    header .container, .sobre-container,.sobre-curiosidades {
         flex-direction: column;
         text-align: center;
 
@@ -87,24 +205,11 @@ header .container{
     .banner{
         margin-top: 160px;
     }
+    
 }
 
 img{
     display: block;
     margin: 0;
     margin-top: auto;
-}
-.photo-scroll {
-    display: flex;
-    overflow-x: scroll;
-    width: 80%;
-    border: 2px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
-}
-
-.photo-scroll img {
-    max-height: 300px;
-    margin-right: 10px;
-    border-radius: 10px;
 }
