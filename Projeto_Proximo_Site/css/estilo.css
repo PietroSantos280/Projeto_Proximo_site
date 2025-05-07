@@ -17,9 +17,9 @@ h1{
 
 }
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
-    padding: 1px;
+    padding: 20px;
 }
 body{
     background-color: white;
@@ -74,6 +74,9 @@ header .container{
     text-align: center;
     text-shadow: 5px 5px 5px white;
 
+}
+section{
+    scroll-margin-top: 100px;
 }
 #historia{
     padding: 35px;
@@ -130,62 +133,10 @@ header .container{
     background-color: whitesmoke;
     color: black;
 }
-.sobre-curiosidades{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1400px;
-    margin: auto;
-}
-.sobre-le-mans{
-    flex: 1;
-    padding: 20px;
-}
-.sobre-le-mans h1{
-    font-size: 1.5em;
-    margin-bottom: 20px;
-
-}
-.sobre-le-mans p{
-    font-size: 1;
-    line-height: 1.5;
-    text-align: justify;
-    margin-top: 10px;
-}
-.hex-fotos{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    flex: 1;
-
-}
-.foto{
-    width: 140px;
-    height: 120px;
-    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
-    overflow: hidden;
-    background-color: whitesmoke;
-    position: relative;
-}
-.foto img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 #modelos{
     padding: 35px;
     background-color: white;
     color: black;
-}
-.sobre-modelos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1400px;
-    margin: auto;
 }
 #tecnologia{
     padding: 35px;
@@ -193,7 +144,7 @@ header .container{
     color: black;
 }
 @media (max-width:675px) {
-    header .container, .sobre-container,.sobre-curiosidades {
+    header .container, .sobre-container {
         flex-direction: column;
         text-align: center;
 
@@ -204,6 +155,9 @@ header .container{
     }
     .banner{
         margin-top: 160px;
+    }
+    section{
+        scroll-margin-top: 200px;
     }
     
 }
