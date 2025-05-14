@@ -1,3 +1,10 @@
+/*Preto (Black) - #1D1D1D
+Branco (White) - #FFFFFF
+Prata (Silver) - #C0C0C0
+Vermelho (Porsche Red) - #D6001C
+Cinza Escuro (Charcoal Gray) - #333333
+Amarelo (Yellow) - #F1D100
+*/
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +19,7 @@ footer{
 }
 h1{
     text-align: center;
-    text-shadow: 5px 5px 5px white;
+    text-shadow: 5px 5px 5px whitesmoke;
     color: black;
 
 }
@@ -22,7 +29,7 @@ h1{
     padding: 20px;
 }
 body{
-    background-color: white;
+    background-color: whitesmoke;
 }
 header{
     background-color: whitesmoke;
@@ -128,21 +135,53 @@ section{
     object-fit: cover;
 }
 
-#curiosidades{
-    padding: 35px;
+.card{
+    width: 70%;
+}
+
+#modelos .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#modelos .item{
     background-color: whitesmoke;
-    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px gray;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor:pointer;
 }
-#modelos{
-    padding: 35px;
-    background-color: white;
-    color: black;
+
+#modelos .item:hover{
+    transform: translateY(0.98);
+    box-shadow: 0 8px 16px gray;
 }
-#tecnologia{
-    padding: 35px;
-    background-color: white;
-    color: black;
+
+#modelos .item:active{
+    transform: scale(0.98);
+    box-shadow: 0 4px 6px gray;
 }
+
+#modelos .item p{
+    margin-top: 15px;
+    font-size: 0.95em;
+    color:  black;
+}
+
+#modelos .imagem img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+
 @media (max-width:675px) {
     header .container, .sobre-container {
         flex-direction: column;
