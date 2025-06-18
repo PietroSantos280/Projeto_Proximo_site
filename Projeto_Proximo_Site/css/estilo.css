@@ -292,7 +292,6 @@ section{
     .galeria{
         grid-template-columns: 1fr;
     }
-    }
 }
 
 img{
