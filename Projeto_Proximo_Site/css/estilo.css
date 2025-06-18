@@ -290,11 +290,8 @@ section{
         max-height: 60vh;
     }
     .galeria{
-        flex-direction: column;
-        display: flex;
+        grid-template-columns: 1fr;
     }
-    .galeria_imagem{
-        flex-direction: column;
     }
 }
 
