@@ -288,10 +288,12 @@ section{
 
 .galeria { 
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(400px, 2fr));
+    grid-template-columns:repeat(auto-fit,minmax(370px, 2fr));
     gap: 20px;
-    max-width: 80%;
-    margin: auto;
+    max-width: 90%;
+    margin-left: 10%;
+    margin-right: 3%;
+
 } 
 .galeria_imagem {
     width: 305px;
@@ -335,8 +337,6 @@ section{
     .galeria{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 }
-
-
-
