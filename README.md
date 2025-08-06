@@ -1,9 +1,5 @@
-# link para o git
-
+# Projeto_Proximo_site
 https://pietrosantos280.github.io/Projeto_Proximo_site/
 
-# link do site da porsche
-
+# Novo site
 https://pietrosantos280.github.io/Projeto_Proximo_site/Projeto_Proximo_Site/index.html
-
-
