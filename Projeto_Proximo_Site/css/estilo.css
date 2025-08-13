@@ -259,6 +259,26 @@ section{
     margin-bottom: 5px;
     font-weight: bold;
   }
+  .centralizado{
+    text-align: center;
+}
+.centraliza{
+    text-align: center;
+}
+body.paginamensagem {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  body.paginamensagem main {
+    flex: 1;
+  }
+  .mensagem{
+    margin-top: 10%;
+    background-color: rgb(136, 43, 43);
+    font-size: xx-large;
+  }
 
 /*modal*/
 .item{
